@@ -1,0 +1,783 @@
+﻿<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Hotel Szeleta bemutatkozása | www.hotelszeleta.hu</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, #f5f5dc, #d2b48c);
+        }
+
+        .header {
+            background-color: #343a40;
+            color: white;
+            padding: 20px 0;
+        }
+
+            .header .logo img {
+                max-width: 150px;
+            }
+
+        .callnow {
+            font-size: 18px;
+            margin-top: 10px;
+        }
+
+        .nav-link {
+            font-size: 16px;
+            color: #343a40 !important;
+        }
+
+            .nav-link:hover {
+                color: #007bff !important;
+            }
+
+        .page-head {
+            background-color: #f5f5dc;
+            padding: 20px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .content {
+            padding: 20px;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .img-fluid {
+            margin: 10px 0;
+            border-radius: 5px;
+        }
+
+        footer {
+            background-color: #343a40;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+
+        .cim {
+            color: black;
+        }
+
+        form {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .form-control {
+            border: 1px solid #ced4da;
+            border-radius: 5px;
+        }
+
+        .btn-primary {
+            background-color: #a6814c;
+            border-color: #a6814c;
+        }
+
+            .btn-primary:hover {
+                background-color: #8b643b;
+                border-color: #8b643b;
+            }
+        .attraction-section {
+            margin-bottom: 40px;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        .attraction-images {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+            .attraction-images img {
+                width: 200px;
+                height: 150px;
+                margin: 10px;
+                border-radius: 5px;
+                box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            }
+        .card {
+            margin-bottom: 20px;
+        }
+
+        .card-img-top {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border: none;
+        }
+        .highlight {
+            font-weight: bold;
+            color: #964b00;
+            font-size: 120%;
+        }
+
+        .info {
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #ffffff;
+            border: 1px solid #e0e0e0;
+            border-radius: 10px;
+        }
+
+        h2, h3 {
+            margin-bottom: 20px;
+        }
+
+        .image-container img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .info-row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .info-text {
+            flex: 1;
+        }
+
+        .info-image {
+            max-width: 350px;
+            flex-basis: 350px;
+            margin-right: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header text-center">
+        <div class="logo">
+            <a href="http://www.hotelszeleta.hu">
+                <img src="https://www.hotelszeleta.hu/wp-content/themes/Gourmet/images/logo.png" alt="Hotel Szeleta">
+            </a>
+        </div>
+        <div>
+            Információ (recepció):<br />
+            <span class="number">+36 46 530 130</span>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">Hotel Szeleta</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Főoldal</a></li>
+                    <li class="nav-item active"><a class="nav-link" href="rolunk.html">Rólunk</a></li>
+                    <li class="nav-item"><a class="nav-link" href="szolgaltatasok.html">Szolgáltatások</a></li>
+                    <li class="nav-item"><a class="nav-link" href="latnivalok.html">Látnivalók</a></li>
+                    <li class="nav-item"><a class="nav-link" href="galeria.html">Galéria</a></li>
+                    <li class="nav-item"><a class="nav-link" href="arak.html">Árak</a></li>
+                    <li class="nav-item"><a class="nav-link" href="foglalas.html">Ajánlat/Foglalás</a></li>
+                    <li class="nav-item"><a class="nav-link" href="eljutas.html">Eljutás</a></li>
+                    <li class="nav-item"><a class="nav-link" href="eng.html">ENG</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="page-head">
+        <h1 class="cim">ENG</h1>
+    </div>
+
+    <div class="content container">
+        <h2>Hotel in a Picturesque Setting</h2>
+        <h3>Our hotel is located in the Bükk National Park, near Lillafüred, in Miskolc-Alsóhámor.</h3>
+        <h5>The hotel consists of two buildings and a separate reception area, surrounded by the soft murmur of the Szinva stream, the fresh air of the Bükk mountains, and the forest.</h5>
+
+        <div class="row">
+            <div class="col-md-4">
+                <img class="img-fluid" src="http://hotelszeleta.hu/wp-content/uploads/2010/02/Hotel-Szeleta-A-Epulet.jpg" alt="Hotel Szeleta 'A' Building">
+            </div>
+            <div class="col-md-4">
+                <img class="img-fluid" src="http://hotelszeleta.hu/wp-content/uploads/2010/02/Hotel-Szeleta-Legifoto.jpg" alt="Hotel Szeleta from Above">
+            </div>
+            <div class="col-md-4">
+                <img class="img-fluid" src="http://hotelszeleta.hu/wp-content/uploads/2010/02/Hotel-Szeleta-B-Epulet.jpg" alt="Hotel Szeleta 'B' Building">
+            </div>
+        </div>
+
+        <p>It’s an ideal place for nature lovers, as there are many nearby attractions and sights, such as the úLillafüred Forest Railway, the Szeleta Cav, the St. Stephen's Dripstone Cave, the Lake Hámori, and the Szinva Stream Waterfal.</p>
+
+        <h5>The hotel has 3 suites and 22 double rooms.</h5>
+        <div class="row">
+            <div class="col-md-6">
+                <img class="img-fluid" src="http://hotelszeleta.hu/wp-content/uploads/2010/02/Lakosztaly-Hotel-Szeleta-thumbnail.jpg" alt="Living Room of a Suite">
+            </div>
+            <div class="col-md-6">
+                <img class="img-fluid" src="http://hotelszeleta.hu/wp-content/uploads/2010/02/Szoba-Hotel-Szeleta-thumbnail.jpg" alt="Room in the Hotel">
+            </div>
+        </div>
+
+        <p><strong>Rooms can be occupied from 2:00 PM and must be vacated by 10:00 AM.</strong></p>
+        <hr style="height:2px;border-width:0;color:gray;background-color:gray" />
+        <article>
+            <h2>Services of Hotel Szeleta***</h2>
+            <h3>breakfast, sauna, pool, salt chamber, bicycle rental, relaxation garden, baby-friendly, internet, parking, gift coupon, meeting room</h3>
+
+            <section>
+                <h5><strong>Breakfast</strong></h5>
+                <p>A plentiful buffet breakfast is served from 7:00 AM to 9:30 AM, and it is included in the room price.</p>
+            </section>
+
+            <section>
+                <h5><strong>Sauna</strong></h5>
+                <img src="http://hotelszeleta.hu/wp-content/uploads/2010/02/Szauna-finn-hotel-szeleta-miskolc-lillafured.jpg" alt="Finnish sauna at Hotel Szeleta" class="img-fluid float-right ml-3" width="300" height="375">
+                <p>The hotel has a Finnish sauna, which guests can use free of charge between 2:00 PM and 10:00 PM. The sauna accommodates 5-6 people, and showers and lockers are available in the lobby area.</p>
+                <h6>Benefits of the Finnish Sauna:</h6>
+                <ul>
+                    <li>Helps the body eliminate waste products</li>
+                    <li>Effective in boosting the immune system and regenerating blood vessels</li>
+                    <li>Unlike a steam bath, bacteria and viruses are killed rather than produced</li>
+                    <li>Improves metabolic processes</li>
+                    <li>Increases blood circulation</li>
+                    <li>Helps reveal and combat latent illnesses</li>
+                    <li>Temperature changes strengthen the skin, invigorate the body and mind, and reinforce the nervous system</li>
+                    <li>Essential oils can enhance its healing effects against cold-related illnesses</li>
+                    <li>The Finnish sauna causes water loss and accelerates blood circulation</li>
+                </ul>
+            </section>
+
+            <section>
+                <h5><strong>Pool</strong></h5>
+                <img src="http://www.hotelszeleta.hu/wp-content/uploads/2010/11/Hotel-Szeleta-Medence-e1288797446913.jpg" alt="The outdoor pool offers endless fun, especially for children" class="img-fluid mb-3">
+                <p>The outdoor pool, equipped with a filtration system, is open seasonally for guests seeking a refreshing dip. With a diameter of 5 meters and a depth of 1 meter, it provides a delightful experience primarily for children.</p>
+            </section>
+
+            <section>
+                <h5><strong>Salt Chamber</strong></h5>
+                <img src="http://www.hotelszeleta.hu/wp-content/uploads/2010/11/Sokamara.jpg" alt="Salt Chamber" class="img-fluid float-left mr-3" width="300" height="200">
+                <p>The salt chamber at Hotel Szeleta offers a unique and beneficial service that all guests can try.</p>
+            </section>
+
+            <section>
+                <h5><strong>Relaxation Garden</strong></h5>
+                <p>Our hotel features a relaxation garden for guests looking to unwind. The garden includes areas for relaxation, conversation, and a playground for children.</p>
+            </section>
+
+            <section>
+                <h5><strong>Baby- and Family-Friendly</strong></h5>
+                <p>Hotel Szeleta is committed to making the stay as comfortable as possible for families.</p>
+            </section>
+
+            <section>
+                <h5><strong>Internet Access</strong></h5>
+                <p>Free Wi-Fi is available throughout the entire hotel.</p>
+            </section>
+
+            <section>
+                <h5><strong>Parking</strong></h5>
+                <p>We provide free parking for our guests.</p>
+            </section>
+
+            <section>
+                <h5><strong>Meeting Room</strong></h5>
+                <p>Hotel Szeleta has a meeting room available for various events, family gatherings, weddings, and conferences.</p>
+            </section>
+
+            <section>
+                <h5><strong>Gift Coupons</strong></h5>
+                <p>We offer gift vouchers for various services, making them a perfect gift for friends and family.</p>
+            </section>
+        </article>
+        <hr style="height:2px;border-width:0;color:gray;background-color:gray" />
+        <div class="attraction-section">
+            <h2>Attractions and Programs</h2>
+            <p class="szoveg">Hámori Climbing Park, Metallurgical Museum, Szeleta Cave, Miskolc Zoo, Diósgyőr Castle and Bath, Lillafüred Trout Farm, Újmassa Ancient Forge, St. Stephen's Cave, Forest Mini Train.</p>
+            <div class="attraction-images">
+                <img src="http://hotelszeleta.hu/wp-content/uploads/2010/02/miskolc-allatkert-thumbnail.jpg" alt="Hámori Climbing Park">
+                <img src="http://hotelszeleta.hu/wp-content/uploads/2010/02/diosgyori-var-thumbnail.jpg" alt="Metallurgical Museum">
+                <img src="http://hotelszeleta.hu/wp-content/uploads/2010/02/szeleta-barlang-thumbnail.jpg" alt="Szeleta Cave">
+                <img src="http://hotelszeleta.hu/wp-content/uploads/2010/02/ujmassai-oskoho-thumbnail.jpg" alt="Miskolc Zoo">
+                <img src="http://hotelszeleta.hu/wp-content/uploads/2010/02/lillafuredi-pisztrang-thumbnail.jpg" alt="Diósgyőr Castle">
+            </div>
+        </div>
+
+        <div class="attraction-section">
+            <h2>Attractions and Programs in Lillafüred (1 KM)</h2>
+            <p class="szoveg">Hámori Lake, Palace Hotel, Szina Stream Waterfall, Anna Tufa Cave, St. Stephen's Cave, Forest Mini Train.</p>
+            <div class="attraction-images">
+                <img src="http://hotelszeleta.hu/wp-content/uploads/2010/02/szinva-patak-vizeses-thumbnail.jpg" alt="Hámori Lake">
+                <img src="http://hotelszeleta.hu/wp-content/uploads/2010/02/hamori-to-thumbnail.jpg" alt="Palace Hotel">
+                <img src="http://hotelszeleta.hu/wp-content/uploads/2010/02/lillafuredi-kisvasut-thumbnail.jpg" alt="Szina Stream Waterfall">
+                <img src="http://hotelszeleta.hu/wp-content/uploads/2010/02/szent-istvan-barlang-thumbnail.jpg" alt="Anna Tufa Cave">
+                <img src="http://hotelszeleta.hu/wp-content/uploads/2010/02/anna-barlang-thumbnail.jpg" alt="Anna Cave">
+            </div>
+        </div>
+
+        <div class="attraction-section">
+            <h2>Attractions and Programs in Miskolc-Tapolca (17 KM)</h2>
+            <p class="szoveg">Cave Bath (thermal bath), bobsled track, adventure park, boating lake and park.</p>
+            <div class="attraction-images">
+                <img src="http://hotelszeleta.hu/wp-content/uploads/2010/02/barlangfordo-thumbnail.jpg" alt="Cave Bath">
+                <img src="http://hotelszeleta.hu/wp-content/uploads/2010/02/miskolc-tapolca-bob-palya-thumbnail.jpg" alt="Bobsled Track">
+                <img src="http://hotelszeleta.hu/wp-content/uploads/2010/02/miskolc-tapolca-kalandtura-park-thumbnail.jpg" alt="Adventure Park">
+                <img src="http://hotelszeleta.hu/wp-content/uploads/2010/02/miskolc-tapolca-csonakazo-to-thumbnail.jpg" alt="Boating Lake">
+                <img src="http://hotelszeleta.hu/wp-content/uploads/2010/02/miskolc-tapolca-park-thumbnail.jpg" alt="Miskolc-Tapolca Park">
+            </div>
+        </div>
+        <hr style="height:2px;border-width:0;color:gray;background-color:gray" />
+        <div class="container">
+            <h2>The Environment of Hotel Szeleta:</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="http://www.hotelszeleta.hu/wp-content/gallery/a-hotel-kornyezete/thumbs/thumbs_hote-szeleta-fotok-kornyezet100.jpg" class="card-img-top">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="http://www.hotelszeleta.hu/wp-content/gallery/a-hotel-kornyezete/thumbs/thumbs_hote-szeleta-fotok-kornyezet101.jpg" class="card-img-top">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="http://www.hotelszeleta.hu/wp-content/gallery/a-hotel-kornyezete/thumbs/thumbs_hote-szeleta-fotok-kornyezet102.jpg" class="card-img-top">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="http://www.hotelszeleta.hu/wp-content/gallery/a-hotel-kornyezete/thumbs/thumbs_hote-szeleta-fotok-kornyezet103.jpg" class="card-img-top">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="http://www.hotelszeleta.hu/wp-content/gallery/a-hotel-kornyezete/thumbs/thumbs_hote-szeleta-fotok-kornyezet104.jpg" class="card-img-top">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="http://www.hotelszeleta.hu/wp-content/gallery/a-hotel-kornyezete/thumbs/thumbs_hote-szeleta-fotok-kornyezet105.jpg" class="card-img-top">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="http://www.hotelszeleta.hu/wp-content/gallery/a-hotel-kornyezete/thumbs/thumbs_hote-szeleta-fotok-kornyezet106.jpg" class="card-img-top">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="http://www.hotelszeleta.hu/wp-content/gallery/a-hotel-kornyezete/thumbs/thumbs_hote-szeleta-fotok-kornyezet107.jpg" class="card-img-top">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="http://www.hotelszeleta.hu/wp-content/gallery/a-hotel-kornyezete/thumbs/thumbs_hote-szeleta-fotok-kornyezet108.jpg" class="card-img-top">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="http://www.hotelszeleta.hu/wp-content/gallery/a-hotel-kornyezete/thumbs/thumbs_hote-szeleta-fotok-kornyezet109.jpg" class="card-img-top">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="http://www.hotelszeleta.hu/wp-content/gallery/a-hotel-kornyezete/thumbs/thumbs_hote-szeleta-fotok-kornyezet110.jpg" class="card-img-top">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="http://www.hotelszeleta.hu/wp-content/gallery/a-hotel-kornyezete/thumbs/thumbs_hote-szeleta-fotok-kornyezet111.jpg" class="card-img-top">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="http://www.hotelszeleta.hu/wp-content/gallery/a-hotel-kornyezete/thumbs/thumbs_hote-szeleta-fotok-kornyezet112.jpg" class="card-img-top">
+                    </div>
+                </div>
+            </div>
+            <h2>Hotel Szeleta from the Outside:</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="http://www.hotelszeleta.hu/wp-content/gallery/a-hotel-szeleta-kulso-fotoi/thumbs/thumbs_hote-szeleta-fotok-kulso100.jpg" class="card-img-top">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="http://www.hotelszeleta.hu/wp-content/gallery/a-hotel-szeleta-kulso-fotoi/thumbs/thumbs_hote-szeleta-fotok-kulso101.jpg" class="card-img-top">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="http://www.hotelszeleta.hu/wp-content/gallery/a-hotel-szeleta-kulso-fotoi/thumbs/thumbs_hote-szeleta-fotok-kulso102.jpg" class="card-img-top">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="http://www.hotelszeleta.hu/wp-content/gallery/a-hotel-szeleta-kulso-fotoi/thumbs/thumbs_hote-szeleta-fotok-kulso103.jpg" class="card-img-top">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="http://www.hotelszeleta.hu/wp-content/gallery/a-hotel-szeleta-kulso-fotoi/thumbs/thumbs_hote-szeleta-fotok-kulso104.jpg" class="card-img-top">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="http://www.hotelszeleta.hu/wp-content/gallery/a-hotel-szeleta-kulso-fotoi/thumbs/thumbs_hote-szeleta-fotok-kulso105.jpg" class="card-img-top">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="http://www.hotelszeleta.hu/wp-content/gallery/a-hotel-szeleta-kulso-fotoi/thumbs/thumbs_hote-szeleta-fotok-kulso106.jpg" class="card-img-top">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="http://www.hotelszeleta.hu/wp-content/gallery/a-hotel-szeleta-kulso-fotoi/thumbs/thumbs_hote-szeleta-fotok-kulso107.jpg" class="card-img-top">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="http://www.hotelszeleta.hu/wp-content/gallery/a-hotel-szeleta-kulso-fotoi/thumbs/thumbs_hote-szeleta-fotok-kulso108.jpg" class="card-img-top">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="http://www.hotelszeleta.hu/wp-content/gallery/a-hotel-szeleta-kulso-fotoi/thumbs/thumbs_hote-szeleta-fotok-kulso109.jpg" class="card-img-top">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="http://www.hotelszeleta.hu/wp-content/gallery/a-hotel-szeleta-kulso-fotoi/thumbs/thumbs_hote-szeleta-fotok-kulso110.jpg" class="card-img-top">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="http://www.hotelszeleta.hu/wp-content/gallery/a-hotel-szeleta-kulso-fotoi/thumbs/thumbs_hote-szeleta-fotok-kulso111.jpg" class="card-img-top">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="http://www.hotelszeleta.hu/wp-content/gallery/a-hotel-szeleta-kulso-fotoi/thumbs/thumbs_hote-szeleta-fotok-kulso112.jpg" class="card-img-top">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="http://www.hotelszeleta.hu/wp-content/gallery/a-hotel-szeleta-kulso-fotoi/thumbs/thumbs_hote-szeleta-fotok-kulso113.jpg" class="card-img-top">
+                    </div>
+                </div>
+            </div>
+            <h2> Hotel Szeleta from the Inside:</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="http://www.hotelszeleta.hu/wp-content/gallery/a-hotel-szeleta-belso-fotoi/thumbs/thumbs_hotel-szeleta-fotok-belso100.jpg" class="card-img-top">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="http://www.hotelszeleta.hu/wp-content/gallery/a-hotel-szeleta-belso-fotoi/thumbs/thumbs_hotel-szeleta-fotok-belso101.jpg" class="card-img-top">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="http://www.hotelszeleta.hu/wp-content/gallery/a-hotel-szeleta-belso-fotoi/thumbs/thumbs_hotel-szeleta-fotok-belso102.jpg" class="card-img-top">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="http://www.hotelszeleta.hu/wp-content/gallery/a-hotel-szeleta-belso-fotoi/thumbs/thumbs_hotel-szeleta-fotok-belso103.jpg" class="card-img-top">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="http://www.hotelszeleta.hu/wp-content/gallery/a-hotel-szeleta-belso-fotoi/thumbs/thumbs_hotel-szeleta-fotok-belso104.jpg" class="card-img-top">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="http://www.hotelszeleta.hu/wp-content/gallery/a-hotel-szeleta-belso-fotoi/thumbs/thumbs_hotel-szeleta-fotok-belso105.jpg" class="card-img-top">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="http://www.hotelszeleta.hu/wp-content/gallery/a-hotel-szeleta-belso-fotoi/thumbs/thumbs_hotel-szeleta-fotok-belso106.jpg" class="card-img-top">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="http://www.hotelszeleta.hu/wp-content/gallery/a-hotel-szeleta-belso-fotoi/thumbs/thumbs_hotel-szeleta-fotok-belso107.jpg" class="card-img-top">
+                    </div>
+                </div>
+            </div>
+            <h2>Services of Hotel Szeleta:</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="http://www.hotelszeleta.hu/wp-content/gallery/a-hotel-szeleta-szolgaltatasai-kepekben/thumbs/thumbs_hotel-szeleta-fotok-szolgaltatasok100.jpg" class="card-img-top">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="http://www.hotelszeleta.hu/wp-content/gallery/a-hotel-szeleta-szolgaltatasai-kepekben/thumbs/thumbs_hotel-szeleta-fotok-szolgaltatasok101.jpg" class="card-img-top">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="http://www.hotelszeleta.hu/wp-content/gallery/a-hotel-szeleta-szolgaltatasai-kepekben/thumbs/thumbs_hotel-szeleta-fotok-szolgaltatasok102.jpg" class="card-img-top">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="http://www.hotelszeleta.hu/wp-content/gallery/a-hotel-szeleta-szolgaltatasai-kepekben/thumbs/thumbs_hotel-szeleta-fotok-szolgaltatasok103.jpg" class="card-img-top">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="http://www.hotelszeleta.hu/wp-content/gallery/a-hotel-szeleta-szolgaltatasai-kepekben/thumbs/thumbs_hotel-szeleta-fotok-szolgaltatasok104.jpg" class="card-img-top">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="http://www.hotelszeleta.hu/wp-content/gallery/a-hotel-szeleta-szolgaltatasai-kepekben/thumbs/thumbs_hotel-szeleta-fotok-szolgaltatasok105.jpg" class="card-img-top">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="http://www.hotelszeleta.hu/wp-content/gallery/a-hotel-szeleta-szolgaltatasai-kepekben/thumbs/thumbs_hotel-szeleta-fotok-szolgaltatasok107.jpg" class="card-img-top">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="http://www.hotelszeleta.hu/wp-content/gallery/a-hotel-szeleta-szolgaltatasai-kepekben/thumbs/thumbs_hotel-szeleta-fotok-szolgaltatasok108.jpg" class="card-img-top">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="http://www.hotelszeleta.hu/wp-content/gallery/a-hotel-szeleta-szolgaltatasai-kepekben/thumbs/thumbs_hotel-szeleta-fotok-szolgaltatasok109.jpg" class="card-img-top">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="http://www.hotelszeleta.hu/wp-content/gallery/a-hotel-szeleta-szolgaltatasai-kepekben/thumbs/thumbs_hotel-szeleta-fotok-szolgaltatasok110.jpg" class="card-img-top">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="http://www.hotelszeleta.hu/wp-content/gallery/a-hotel-szeleta-szolgaltatasai-kepekben/thumbs/thumbs_hotel-szeleta-fotok-szolgaltatasok111.jpg" class="card-img-top">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="http://www.hotelszeleta.hu/wp-content/gallery/a-hotel-szeleta-szolgaltatasai-kepekben/thumbs/thumbs_hotel-szeleta-fotok-szolgaltatasok112.jpg" class="card-img-top">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="http://www.hotelszeleta.hu/wp-content/gallery/a-hotel-szeleta-szolgaltatasai-kepekben/thumbs/thumbs_hotel-szeleta-fotok-szolgaltatasok113.jpg" class="card-img-top">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="http://www.hotelszeleta.hu/wp-content/gallery/a-hotel-szeleta-szolgaltatasai-kepekben/thumbs/thumbs_hotel-szeleta-fotok-szolgaltatasok114.jpg" class="card-img-top">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="http://www.hotelszeleta.hu/wp-content/gallery/a-hotel-szeleta-szolgaltatasai-kepekben/thumbs/thumbs_hotel-szeleta-fotok-szolgaltatasok116.jpg" class="card-img-top">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="http://www.hotelszeleta.hu/wp-content/gallery/a-hotel-szeleta-szolgaltatasai-kepekben/thumbs/thumbs_hotel-szeleta-fotok-szolgaltatasok117.jpg" class="card-img-top">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="http://www.hotelszeleta.hu/wp-content/gallery/a-hotel-szeleta-szolgaltatasai-kepekben/thumbs/thumbs_hotel-szeleta-fotok-szolgaltatasok118.jpg" class="card-img-top">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="http://www.hotelszeleta.hu/wp-content/gallery/a-hotel-szeleta-szolgaltatasai-kepekben/thumbs/thumbs_hotel-szeleta-fotok-szolgaltatasok120.jpg" class="card-img-top">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="http://www.hotelszeleta.hu/wp-content/gallery/a-hotel-szeleta-szolgaltatasai-kepekben/thumbs/thumbs_hotel-szeleta-fotok-szolgaltatasok123.jpg" class="card-img-top">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="http://www.hotelszeleta.hu/wp-content/gallery/a-hotel-szeleta-szolgaltatasai-kepekben/thumbs/thumbs_hotel-szeleta-fotok-szolgaltatasok124.jpg" class="card-img-top">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr style="height:2px;border-width:0;color:gray;background-color:gray" />
+        <div class="info">
+            <div class="info-row">
+                <div class="info-image">
+                    <div class="image-container">
+                        <img src="http://www.hotelszeleta.hu/wp-content/uploads/2010/02/Hotel_Szeleta_2025-os_arlista_1.0-e1725444384759.jpg">
+                    </div>
+                </div>
+
+                <div class="info-text">
+                    <p><span class="highlight">The prices</span> include the buffet breakfast and other services of the hotel (parking, internet, sauna, salt chamber, seasonal outdoor pool). Bicycles are available for rent at an additional cost: 3,000 HUF/day (from 8:00 AM to 8:00 PM); details can be found in the services menu or at the reception.</p>
+
+                    <p>The accommodation fee does not include the Tourist Tax (IFA), which is 450 HUF/person/night. Those under 18 years old, residents of Miskolc, and families with three or more children are exempt from the IFA.</p>
+
+                    <p><span class="highlight">Rooms can be occupied from 2:00 PM and must be vacated by 10:00 AM.</span> Breakfast is served from 7:00 AM to 9:30 AM.</p>
+
+                    <h3>Children's Discounts:</h3>
+                    <p>Children staying in the same room as their parents receive a 100% discount until the age of 4 and a 50% discount on the extra bed price until the age of 12! If one parent is staying with one child, or two parents are staying with two children in two separate rooms, the discount can be provided based on the difference in the rates for the single and double rooms.</p>
+
+                    <h3>Group Bookings:</h3>
+                    <p>Further discounts can be agreed upon.</p>
+
+                    <h3>Booking Periods:</h3>
+                    <ul>
+                        <li><span class="highlight">From May 1, 2024, to September 30, 2024</span>, we can only accept reservations including a Friday or Saturday night, as well as for peak periods** with a minimum of TWO nights.</li>
+                        <li><span class="highlight">From May 1, 2025, to September 30, 2025</span>, we can only accept reservations including a Friday or Saturday night, as well as for peak periods* with a minimum of TWO nights (a minimum of THREE nights between April 17-20, 2024).</li>
+                    </ul>
+
+                    <p>*<span class="highlight">Peak periods</span> in 2024: October 31-November 2, December 23-28, June 6-8, and until August 24.</p>
+                    <p>** All promotions are valid for at least one night; one free zoo admission ticket will be given per person.</p>
+
+                    <p class="highlight">The cancellation conditions are included in the Hotel Szeleta Business Regulations.</p>
+                </div>
+            </div>
+        </div>
+        <hr style="height:2px;border-width:0;color:gray;background-color:gray" />
+        <form class="container p-4 border shadow-sm rounded">
+            <div class="form-group">
+                <label for="bookingType">Request for a quote or reservation?</label>
+                <select id="bookingType" class="form-control">
+                    <option>--</option>
+                    <option>Request for a quote</option>
+                    <option>Reservation</option>
+                </select>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6 form-group">
+                    <label for="arrivalDate">Arrival Date</label>
+                    <input type="date" class="form-control" id="arrivalDate">
+                </div>
+                <div class="col-md-6 form-group">
+                    <label for="departureDate">Departure Date</label>
+                    <input type="date" class="form-control" id="departureDate">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Enter your name">
+            </div>
+
+            <div class="form-group">
+                <label for="address">Address</label>
+                <input type="text" class="form-control" id="address" placeholder="Postal code, city, street, house number">
+            </div>
+
+            <div class="row">
+                <div class="col-md-6 form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" class="form-control" id="email" placeholder="Your email address">
+                </div>
+                <div class="col-md-6 form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" class="form-control" id="phone" placeholder="Phone number">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="roomType">Room Type</label>
+                <select id="roomType" class="form-control">
+                    <option>--</option>
+                    <option>1 guest bed</option>
+                    <option>2 guest beds</option>
+                    <option>3 guest beds</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="paymentMethod">Payment Method</label>
+                <select id="paymentMethod" class="form-control">
+                    <option>Cash</option>
+                    <option>Credit Card</option>
+                    <option>Prepayment</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="notes">Notes</label>
+                <textarea id="notes" class="form-control" rows="3" placeholder="Enter your extra requests or notes here"></textarea>
+            </div>
+
+            <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="terms">
+                <label class="form-check-label" for="terms">I have read and accept the Hotel Szeleta Business Regulations</label>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block mt-3">Send</button>
+        </form>
+        <hr style="height:2px;border-width:0;color:gray;background-color:gray" />
+        <section class="container my-5">
+            <h2 class="mb-4">Where to Find Us</h2>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <h4>Our Address:</h4>
+                    <p>
+                        3517 Miskolc, Szeleta u. 12-14.<br>
+                        <strong>GPS Coordinates:</strong> N 48.10862° E 20.63832°
+                    </p>
+
+                    <h4>By Car</h4>
+                    <p>From Budapest, take the M3 motorway exit at the Miskolc southern exit. From there, clear road signs will guide you towards Lillafüred. As you approach Miskolc-Alsóhámor, Hotel Szeleta signs will direct guests along the main road.</p>
+
+                    <h4>By Public Transport</h4>
+                    <h5>From the Train Station</h5>
+                    <p>Arrive at Miskolc Tiszai Railway Station. From the station, take bus number 1 or tram number 1 to the Felső-Majláth stop. Then take bus number 5 or 15 to the Alsóhámor stop. After that, you will find us with about a 100-150 m walk along the road.</p>
+
+                    <h5>From the Bus Station</h5>
+                    <p>Arrive at Miskolc Búza Square. Take bus number 1 to the Felső-Majláth stop. Then take bus number 5 or 15 to the Alsóhámor stop. After that, you will find us with about a 100-150 m walk along the road.</p>
+
+                    <h4>Miskolc Public Transport</h4>
+                    <p>The current schedules for city buses and trams can be found at: <a href="https://www.mvkzrt.hu" target="_blank">www.mvkzrt.hu</a></p>
+                </div>
+
+                <div class="col-md-6">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2662.0216170340056!2d20.636148515882286!3d48.108623579223246!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4740c5ff74c644eb%3A0xbadcaf9203c8f53d!2sHotel%20Szeleta!5e0!3m2!1sen!2shu!4v1633110218432!5m2!1sen!2shu"
+                            width="100%"
+                            height="450"
+                            style="border:0;"
+                            allowfullscreen=""
+                            loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Hotel Szeleta. Minden jog fenntartva.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
